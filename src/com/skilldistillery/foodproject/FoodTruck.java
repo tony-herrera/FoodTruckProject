@@ -1,5 +1,6 @@
 package com.skilldistillery.foodproject;
 
+
 public class FoodTruck {
 	private String name;
 	private String foodType;
@@ -15,9 +16,13 @@ public class FoodTruck {
 		this.name = name;
 		this.foodType = foodType;
 		this.numericRating = numericRating;
+
+		// Create instances and add them to the array
+
 	}
 
 	public double getNumericId() {
+
 		return numericId;
 	}
 
