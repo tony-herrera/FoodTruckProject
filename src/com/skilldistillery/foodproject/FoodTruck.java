@@ -1,6 +1,5 @@
 package com.skilldistillery.foodproject;
 
-
 public class FoodTruck {
 	private String name;
 	private String foodType;
@@ -8,26 +7,31 @@ public class FoodTruck {
 	private static int numericId = 0;
 	private int foodTruckId;
 
-	public FoodTruck(double numericId, String name, String foodType, double numericRating) {
-	}
+//	public FoodTruck(String name, String foodType, double rating) {
+//	}
 
-	public FoodTruck(Double numericId, String name, String foodType, double numericRating) {
+	public FoodTruck(int numericId, String name, String foodType, double numericRating) {
 		this.foodTruckId = FoodTruck.numericId++;
 		this.name = name;
 		this.foodType = foodType;
 		this.numericRating = numericRating;
 
-		// Create instances and add them to the array
-
 	}
 
-	public double getNumericId() {
+	public int getNumericId() {
 
 		return numericId;
+	}
+	public void setNumericId() {
+		
+		this.numericId = FoodTruck.numericId++;
 	}
 
 	public String getName() {
 		return name;
+	}
+
+	public FoodTruck() {
 	}
 
 	public void setName(String name) {
@@ -48,6 +52,15 @@ public class FoodTruck {
 
 	public void setNumericRating(double numericRating) {
 		this.numericRating = numericRating;
+	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("FoodTruck [name=").append(name).append(", foodType=").append(foodType)
+				.append(", numericRating=").append(numericRating).append(", foodTruckId=").append(foodTruckId)
+				.append("]" + FoodTruck.numericId);
+		return builder.toString();
 	}
 
 }
