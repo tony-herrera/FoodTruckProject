@@ -1,4 +1,4 @@
-package com.skilldistillery.foodproject;
+package com.skilldistillery.foodproject;   
 
 public class FoodTruck {
 	private String name;
