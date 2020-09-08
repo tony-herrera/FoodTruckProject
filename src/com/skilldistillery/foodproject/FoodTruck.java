@@ -6,23 +6,20 @@ public class FoodTruck {
 	private double numericRating;
 	private static int numericId = 1;
 	private int foodTruckId;
-	private int foodTruckCounter;
 
 //	public FoodTruck(String name, String foodType, double rating) {
 //	}
 
-	public FoodTruck(int numericId, String name, String foodType, double numericRating) {
+	public FoodTruck(String name, String foodType, double numericRating) {
 		this.foodTruckId = FoodTruck.numericId++;
 		this.name = name;
 		this.foodType = foodType;
 		this.numericRating = numericRating;
-		this.numericId = foodTruckCounter;
-		foodTruckCounter++;
 
 	}
-
-	public void foodTruck() {
-
+	
+	public FoodTruck() {
+		
 	}
 
 	public int getNumericId() {
@@ -39,8 +36,6 @@ public class FoodTruck {
 		return name;
 	}
 
-	public FoodTruck() {
-	}
 
 	public void setName(String name) {
 		this.name = name;
