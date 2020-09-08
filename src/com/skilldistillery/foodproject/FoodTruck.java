@@ -7,8 +7,6 @@ public class FoodTruck {
 	private static int numericId = 1;
 	private int foodTruckId;
 
-//	public FoodTruck(String name, String foodType, double rating) {
-//	}
 
 	public FoodTruck(String name, String foodType, double numericRating) {
 		this.foodTruckId = FoodTruck.numericId++;
